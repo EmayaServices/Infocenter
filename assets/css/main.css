@@ -1798,7 +1798,7 @@ input, select, textarea {
     }
 
     .profile__pic img {
-        margin: 1% 2rem 2% 2rem;
+        margin: 1% 1.5rem 2% 1.5rem;
         display: flex;
         background-color: var(--primary-bg);
         border-radius: 50%;
