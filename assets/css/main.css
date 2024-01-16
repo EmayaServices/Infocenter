@@ -1764,12 +1764,11 @@ input, select, textarea {
         margin: 10px;
         vertical-align: top;
     }
-
-	@media screen and (min-width: 1681px) {
-		.profile{
-			width: 500px;
-		}
+@media (min-width: 1681px) {
+	.profile{
+		width: 500px;
 	}
+}
 
     .profile:hover {
         cursor: pointer;
