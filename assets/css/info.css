@@ -1,0 +1,324 @@
+/*--------------------------------------------------------------
+# MAIN HR INFO PAGE
+--------------------------------------------------------------*/
+.info-body{
+	width: 80%;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------------------------------------------------------
+# SERVICES CARDS
+--------------------------------------------------------------*/
+/* SERVICES */
+	.h-sec-cards{
+		display: flex;
+		align-items: stretch;
+	}
+
+	.h-cards{
+	    flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.h-link{
+		text-decoration: none;
+	}
+
+	.hr-card, .h-card{
+		background: #fbfbfb /*#dee2e6*/;
+		border: 0.2em solid #0c2340;
+		padding: 0.5em;
+		border-radius: 15px;
+	}
+
+	.hr-card >.card-body > h5, .h-card >.card-body > h5{
+		text-transform: uppercase;
+		font-size: 22pt;
+		line-height: normal;
+		margin-bottom: 0.7em;
+		font-weight: 700;
+		color: #00c756;
+	}
+
+	.hr-card >.card-body > p, .h-card >.card-body > p{
+		font-size: 14pt;
+		font-weight: 400;
+		line-height: normal;
+		color: #0c2340;
+	}
+
+	#h-card3 > .card > .card-body{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	/* MAILS OPTS */
+	.a-opts1, 
+	.a-opts2{
+		display: flex;
+	}
+
+	.a-opts1 > p, 
+	.a-opts2 > p{
+		line-height: normal;
+		margin-left: 0.7em;
+		font-weight: 400;
+	}
+
+	.a-opts2{
+		margin-top: 0.5em;;
+	}
+
+	
+
+	/* EXCEPTIONS CARDS VIEW */
+		@media (min-width: 1650px){
+			#h-card1{
+				width: 100%;
+			}
+			#h-card4, #h-card5, #h-card6{
+				width: 33.33%;
+			}
+			.hr-card > .card-body{
+				display: flex;
+    			flex-direction: column;
+    			justify-content: space-between;
+			}
+		}
+
+		@media (max-width: 1650px){
+			.hr-card > .row{
+				margin-right: 0;
+			}
+			.hr-card >.card-body > h5, .h-card >.card-body > h5{
+				margin-bottom: 0.4em;
+				line-height: 1;
+			}
+			.hr-card, .h-card {
+				padding: 0;
+			}
+			#h-card2, #h-card5{
+				width: 45%;
+			}
+			#h-card1, #h-card6{
+				width: 55%;
+			}
+		}
+
+		@media (max-width: 1350px){
+			.info-content1{
+				padding: 0;
+			}
+			.info1{
+				margin-bottom: 0 !important;
+			}
+			.info-body{
+				width: 100%;
+				padding-top: 0.5em;
+			}
+		}
+
+		@media (max-width: 1085px){
+			.info-body{
+				padding-top: 0.5em;
+			}
+		}
+
+		@media (max-width: 970px) and (min-width: 800px){
+			.hr-btns{
+				flex-direction: column;
+				> a:nth-child(2){
+					margin-left: 0 !important;
+					margin-top: 0.4em;
+				}
+			}
+		}
+
+		@media (max-width: 800px){
+			#h-card1, #h-card2, #h-card3, #h-card4, #h-card5, #h-card6{
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 510px){
+			.hr-btns{
+				flex-direction: column;
+				> a:last-child{
+					margin-left: 0 !important;
+					margin-top: 0.4em;
+				}
+			}
+		}
+
+
+/* BTNS GROUP */
+	.hr-btns{
+		width: 100%;
+		display: flex;
+		> a:nth-child(2){
+			margin-left: 1em;
+		}
+	} 
+
+	.btn-primary{
+		width: -webkit-fill-available;
+		margin-top: 1em;
+	}
+
+/* HOVER CARD*/
+	.h-card:hover{
+		background: #0c2340;
+		p {
+			transition: all 0.3s ease-out;
+			color: #f3f3f3;
+		  }
+	}
+
+
+
+/*--------------------------------------------------------------
+# ACCORDION PAGE
+--------------------------------------------------------------*/
+	.info-accordion{
+		width: 80%;
+		margin: 2em;
+	}
+
+	.info1{
+		width: 20%;
+		padding: 2em;
+		margin-bottom: 1em;
+	}
+
+/* TITLE SECTION*/
+	.info-title > h1 > span{
+		color: #00c756;
+	}
+
+/* ACCORDION SECTION */
+	.accordion-button{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16pt;
+		background: #d9d9d9;
+		border-radius: 0.55em;
+		color: #0c2340;
+	}
+
+	.accordion-item,
+	.accordion-item:first-of-type,
+	.accordion-item:first-of-type .accordion-button,
+	.accordion-item:not(:first-of-type),
+	.accordion-item:last-of-type .accordion-button.collapsed{
+		border-radius: 0.55em;
+	}
+	
+	/*Bold set*/
+	.e-ibold{
+		font-weight: 800;
+		color: #0d6efd;
+	}
+
+	/* CUSTOM ARROW */
+	.accordion{
+		--bs-accordion-border-width: 0.2em solid #0c2340 !important;
+		--bs-accordion-btn-active-icon: none;
+		--bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.95842 23.7071C7.34894 24.0976 7.98211 24.0976 8.37263 23.7071L14.7366 17.3431C15.1271 16.9526 15.1271 16.3195 14.7366 15.9289C14.3461 15.5384 13.7129 15.5384 13.3224 15.9289L7.66553 21.5858L2.00867 15.9289C1.61815 15.5384 0.984983 15.5384 0.594459 15.9289C0.203934 16.3195 0.203934 16.9526 0.594459 17.3431L6.95842 23.7071ZM6.66553 -3.63315e-08L6.66553 23L8.66553 23L8.66553 3.63315e-08L6.66553 -3.63315e-08Z' fill='%230C2340'/%3e%3c/svg%3e");
+	}
+
+/* SETTINGS ACCORDION */
+	.accordion-item:not(:first-of-type){
+		border: 0.2em solid #0c2340;
+	}
+
+	.accordion-item{
+		margin-bottom: 0.5em;
+		color: #0c2340;
+		background-color: #d9d9d9;
+		border: 0.2em solid #0c2340;
+		margin-left: 0.75em;
+	}
+
+	.accordion-body{
+		padding-top: 0;
+		font-weight: 400;
+		> ul{
+			padding-left: 1em;
+		}
+	}
+
+	/*SHADOW OR SELECTION CARD SET*/
+	.accordion-button:focus {
+		border-color: transparent !important;
+		box-shadow: none !important;
+	}
+	
+	.accordion-opts{
+		color: #0c2340;
+		padding-left: 1em;
+		padding-bottom: 0.7em;
+	}
+
+	.accordion-button:not(.collapsed){
+		background: transparent;
+		font-size: 20pt;
+	}
+
+
+/* NUM SET */
+	.a-num{
+		list-style: decimal;
+		::marker{
+			font-weight: 800;
+		}
+	}
+
+/* BTN SET */
+.btn-i2{
+	margin: 0 0.5em;
+}
+
+/* CARDS ANIMATION */
+	.accordion-item.active {
+		box-shadow: 15px 15px #0c2340;
+		margin: 0 0.8em 1.4em 0;	
+	}
+
+/*RESPONSIVE AREA*/
+	@media (max-width: 1650px){
+		.info-accordion {
+			width: 70%;
+		}
+		.accordion-button{
+			padding: 0.5em;
+		}
+	}
+
+	@media (max-width: 1350px){
+		.info-accordion{
+			width: 100%;
+			margin: 0;
+			padding: 0.5em 2em 2em 2em;
+		}
+		.info-title {
+			position: relative;
+		}
+		.accordion-item{
+			margin-left: 0;
+		}
+		.info1{
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1085px){
+		.info-content1{
+			padding: 0;
+		}
+		.info1{
+			margin-bottom: 0;
+		}
+	}
