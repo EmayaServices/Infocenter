@@ -701,6 +701,29 @@
 	}
 }
 
+@media (max-width: 1380px){
+	.h-sec-banner, .hc-set{
+		width: 50.5%;
+	}
+	.h-sec-gallery {
+		width: 49.5%;
+	}
+	.hg-card {
+		width: 70%;
+		padding: 0.5em;
+	}
+	.carousel-inner{
+		height: 80%;
+	}
+	.h-sec-gallery {
+		padding: 1.5em 0;
+	}
+	.h-card-gallery > h5 {
+		font-size: 18pt;
+		margin-top: -2em;
+	}
+}
+
 
 
 /*--------------------------------------------------------------
