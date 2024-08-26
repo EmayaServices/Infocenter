@@ -1,2 +1,14 @@
-Last update 27/03/2024
-Bulletins - April
+Last update 08/26/2024
+Home
+CARDS - ticketing system HR & IT
+General menu - Deleted dropdowns
+
+IT
+Deleted Feedback form IT
+
+
+HR
+Anonymous Ethic Line
+HR - SLA
+
+
