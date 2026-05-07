@@ -160,6 +160,11 @@
 		font-size: 16pt;
 	}
 
+/* EXCEPTION */
+	.c-points > li {
+		margin-bottom: .7em;
+	}
+
 /* RESPONSIVE AREA BENEFITS */
 
 @media (max-width: 1855px){
