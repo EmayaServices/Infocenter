@@ -131,12 +131,13 @@
 			}
 		}
 
-		@media (max-width: 970px) and (min-width: 800px){
+@media (max-width: 1444px){
 			.hr-btns{
 				flex-direction: column;
 				> a:nth-child(2){
 					margin-left: 0 !important;
 					margin-top: 0.4em;
+					padding-left: 0
 				}
 			}
 		}
@@ -144,16 +145,6 @@
 		@media (max-width: 800px){
 			#h-card1, #h-card2, #h-card3, #h-card4, #h-card5, #h-card6{
 				width: 100%;
-			}
-		}
-
-		@media (max-width: 510px){
-			.hr-btns{
-				flex-direction: column;
-				> a:last-child{
-					margin-left: 0 !important;
-					margin-top: 0.4em;
-				}
 			}
 		}
 
